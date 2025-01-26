@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Online Test Regression Automation" thread-count="5"
+       parallel="tests" verbose="4">
+
+    <listeners>
+        <listener
+                class-name="com.qa.onlineTesting.reports.ExtentReportListener" />
+
+    </listeners>
+    <test name="Home Page Test">
+        <classes>
+            <class name="com.qa.onlineTesting.tests.HomePageTest" />
+        </classes>
+    </test>
+</suite>
